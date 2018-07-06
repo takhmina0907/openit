@@ -1,0 +1,193 @@
+*{
+  box-sizing: border-box;
+}
+body{
+
+	margin:0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background: #e9eff8;
+
+}
+.loader {
+  border: 8px solid #d6dadc;
+  border-radius: 50%;
+  border-top: 8px solid  #4a8bfb;
+  border-left: 8px solid  #4a8bfb;
+  border-right: 8px solid  #4a8bfb;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center; 
+}
+
+.loader2 {
+  border: 8px solid #d6dadc;
+  border-radius: 50%;
+  border-left: 8px solid  #f97d96;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+  }
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+  margin-right: 2px
+
+}
+.flex-container {
+  	display: flex;
+  	align-items: stretch;
+  	
+  
+}
+.dot1 {
+    height: 8px;
+    width: 8px;
+    background-color:#f97d96;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+
+.dot2 {
+    height: 8px;
+    width: 8px;
+    background-color:#4a8bfb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    box-sizing: border-box;
+   
+
+}
+
+.flex-container > div {
+  	background-color: #fff;
+  	width: 100px;
+  	margin: 20px;
+  	border-radius: 5px;
+	  box-sizing: border-box;
+  	box-shadow: 0 10px 50px rgba(0,0,0,0.16); 
+  	padding: 15px;
+  	position: relative;
+  }
+p{
+	display: inline-block;
+	margin: 0 15px ;
+	box-sizing: border-box;
+	display: flex;
+    justify-content: flex-start;
+    font-size: 10pt;
+	color: #c4c8ca;
+    
+
+}
+.circuit{
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+
+}
+h4{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #c4c8ca;
+	letter-spacing: 1px;
+}
+h1{
+  display: inline-block;
+  color: #3a4365;
+  margin: 10px 15px;
+
+}
+hr{
+  margin: 35px 0;
+  border-color:  #f9f9f9;
+
+}
+
+#third_box  {
+  margin: 17px 0;
+  border-color:  #f9f9f9;
+}
+.box_left{
+  display: inline-block;
+  box-sizing: border-box;
+  
+
+}
+
+.box_right{
+  float: right;
+  
+}
+
+.month {
+    width: 100%;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: #c4c8ca ;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+}
+
+.month .prev {
+    float: left;
+   
+}
+
+.month .next {
+    float: right;
+    
+}
+/*skill in Summary box*/
+.graph{
+  width: 80px;
+  height: 5px;
+  background: #d6dadc;
+  border-radius: 5px;
+  display: inline-block;
+      margin-left: 15px;
+}
+.over{
+  background: #4a8bfb;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.two {
+   background: #f97d96;
+}
+
+#myCanvas{
+      border-radius: 5px;
+      width: 50%;
+      height: 30%;
+      margin-right: 10px;
+      white-space:nowrap;
+    }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+	
+</head>
+
+<body>
+
+<canvas id="draw" style='border:2px solid' width='500' height='500'>
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var canvas = document.getElementById("draw");
+var x = canvas.getContext("2d");
+
+var grafics = {
+    g1: {1: 2, 2: 5, 3: 10, 4: 13, 5: 15.5, 6: 16, 7: 16.5, 8: 13, 9: 12, 10: 13, 11: 16 },
+    
+    g3: {1: 7, 2: 5, 3: 5, 4: 6, 5: 7, 6: 8, 7: 10, 8: 11, 9: 10, 10: 7, 11: 5},
+    
+}
+//цвета линий
+var colors = ['#f00', '#00f'];
+ 
+var canvas = document.getElementById("draw");
+var gr = canvas.getContext("2d");
+ 
+var maxCount = 35 + 10;
+var x0 = y0 = 30;
+var width = canvas.width - 80;
+var height = canvas.height - 90;
+var stepY = Math.round(height / maxCount);
+var stepX = Math.round(width / 10);
+
+gr.beginPath();
+//Вертикальная линия
+gr.moveTo(x0, y0);
+gr.lineTo(x0, height + y0);
+//горизонтальная линия
+gr.lineTo(width + x0, height + y0);
+
+
+
+var nr_color = 0;
+for (var g in grafics) {
+   gr.beginPath();
+
+   for (var m in grafics[g]) {
+      var count = grafics[g][m];
+      var x = x0 + ((m - 1) * stepX);
+      var y = y0 + (height - count * stepY);
+ 
+      if (1 == m) 
+         gr.moveTo(x, y); 
+      else 
+         gr.lineTo(x, y);
+      
+    }
+
+    gr.strokeStyle = colors[nr_color]; //цвет линии
+    nr_color++;	
+    gr.lineWidth = 1;//толщина линии		
+    gr.stroke();
+}
+</script>
+
+<div class="skill">
+        <div class="kill_lvl" style="width: 50%">
+          <div class="skill_lvl" style="width: 10%"></div>
+        </div>
+
+      </div>
+</body>
+</html>
+<!-- <html>
+<body>
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(10, 100);
+ctx.bezierCurveTo(10, 100, 50, 200, 200, 10);
+ctx.stroke();
+
+</script> 
+
+</body>
+</html>-->

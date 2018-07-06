@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.skill{
+			width: 150px;
+			height: 5px;
+			background: linear-gradient(to right, #4a8bfb, #f97d96);
+			border-radius: 5px;
+		}
+		#myCanvas{
+			background-color:  linear-gradient(to right, #4a8bfb, #f97d96);
+			border-radius: 5px;
+		}
+
+		
+			
+
+	</style>
+</head>
+<body>
+
+	<div class="skill">
+				
+	</div>
+	<canvas id="myCanvas" width="200" height="150">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+	<script>
+
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+
+		var gradient = ctx.createLinearGradient(0, 0, 170, 0);
+		gradient.addColorStop("0", "#4a8bfb");
+		gradient.addColorStop("1.0", "#f97d96");
+
+
+		// Fill with gradient
+		ctx.strokeStyle = gradient;
+		ctx.lineWidth = 5;
+		ctx.beginPath();
+		ctx.moveTo(10, 100);
+		ctx.bezierCurveTo(10, 100, 50, 150, 200, 20);
+		ctx.stroke();
+
+		
+   </script>
+  </body>
+</html>      
+		
+
+</script> 
+	
+</body>
+</html>

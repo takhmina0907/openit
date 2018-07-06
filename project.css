@@ -1,0 +1,81 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background: #e9eff8;
+}
+
+header{
+	height: 80px;
+	background-color: #fff;
+	background-position: center;
+	position: relative;
+	
+}
+/*Header and his elements*/
+.row #line{
+	border-left: 2px solid black;
+	display: inline-block;
+}
+.l{
+	float: left;
+	list-style: none;
+	margin-top: 30px;
+}
+
+.l li ,.r li{
+	display: inline-block;
+}
+
+.l li a, .r li a{
+	text-decoration: none;
+	color: #c4c8ca;
+	font-family:'Roboto', sans-serif;
+	padding: 5px 20px;
+	font-size: 15px;
+}
+.r{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	margin-right: 20px
+
+}
+h3{
+	display: inline;
+	color: #4a8bfb;
+	font-family: 'Damion', cursive;
+	font-size: 30px;
+	font-weight: lighter;
+	position: absolute;
+	top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 48%; /* position the left edge of the element at the middle of the parent */
+	transform: translate(-50%, -120%); 
+}
+input{
+	font-style: italic;
+	border: none;
+}
+
+/*Planner board text*/
+#star_butt{
+	margin: 20px 10px 0px 20px;
+	box-shadow: 0 10px 50px rgba(74, 139, 251, 0.5); 
+}
+.title{
+	display: inline-block;
+
+}
+#main_title{
+	margin:0;
+	padding: 0;
+	color: #000;
+	letter-spacing: 0.5px;
+	display: inline-block;
+	margin: 20px 10px 0px 15px;
+}
+small{
+	margin-left: 15px;
+	color: #c4c8ca;
+}
+
